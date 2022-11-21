@@ -160,9 +160,9 @@ bash$ ls Build/MdeModule/DEBUG_*/*/HelloWorld.efi
 
 ## Window
 
-
+* 추후 추가
 
 ## Mac OS
 
-
+* 추후 추가
 
