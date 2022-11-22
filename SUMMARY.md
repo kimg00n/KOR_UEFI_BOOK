@@ -10,3 +10,4 @@
 * [6. Handle/Protocol 데이터 베이스 구조 - Part 1](6.-handle-protocol-part-1.md)
 * [7. Handle/Protocol 데이터 베이스 구조 - Part 2](7.-handle-protocol-part-2.md)
 * [8. HandleProtocol API 함수 & ImageHandle 프로토콜을 통한 정보](8.-handleprotocol-api-and-imagehandle.md)
+* [9. ProtocolsPerHandle API를 통한 ImageHandle 프로토콜 가져오기](9.-protocolsperhandle-api-imagehandle.md)
