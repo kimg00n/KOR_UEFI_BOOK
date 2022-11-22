@@ -13,3 +13,4 @@
 * [9. ProtocolsPerHandle API를 통한 ImageHandle 프로토콜 가져오기](9.-protocolsperhandle-api-imagehandle.md)
 * [10. EFI\_STATUS 타입 과 EFI\_ERROR 매크로](10.-efi\_status-efi\_error.md)
 * [11. EFI 메모리 맵 정보 얻기](11.-efi.md)
+* [12. EFI 메모리 맵을 리눅스 커널 스타일로 바꾸기](12.-efi.md)
