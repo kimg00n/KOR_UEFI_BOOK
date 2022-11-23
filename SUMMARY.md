@@ -17,3 +17,4 @@
 * [13.ShellAppMain 진입점](13.shellappmain.md)
 * [14.gRT->GetNextVariableName API를 사용하여 모든 변수 이름 및 GUID 가져오기](14.grt-greater-than-getnextvariablename-api-guid.md)
 * [16. OVMF 이미지 내에 부팅 옵션 만들기](16.-ovmf.md)
+* [17. 부팅 옵션에 WaitForEvent 기능 추가](17.-waitforevent.md)
