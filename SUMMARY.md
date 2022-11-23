@@ -19,3 +19,4 @@
 * [15. gRT->GetVariable API를 사용하여 부팅 변수 가져오기 및 구문 분석](15.-grt-greater-than-getvariable-api.md)
 * [16. OVMF 이미지 내에 부팅 옵션 만들기](16.-ovmf.md)
 * [17. 부팅 옵션에 WaitForEvent 기능 추가](17.-waitforevent.md)
+* [18. ReadKeyStroke 함수로 사용자 입력 처리](18.-readkeystroke.md)
