@@ -14,3 +14,4 @@
 * [10. EFI\_STATUS 타입 과 EFI\_ERROR 매크로](10.-efi\_status-efi\_error.md)
 * [11. EFI 메모리 맵 정보 얻기](11.-efi.md)
 * [12. EFI 메모리 맵을 리눅스 커널 스타일로 바꾸기](12.-efi.md)
+* [16. OVMF 이미지 내에 부팅 옵션 만들기](16.-ovmf.md)
