@@ -16,5 +16,6 @@
 * [12. EFI 메모리 맵을 리눅스 커널 스타일로 바꾸기](12.-efi.md)
 * [13.ShellAppMain 진입점](13.shellappmain.md)
 * [14.gRT->GetNextVariableName API를 사용하여 모든 변수 이름 및 GUID 가져오기](14.grt-greater-than-getnextvariablename-api-guid.md)
+* [15. gRT->GetVariable API를 사용하여 부팅 변수 가져오기 및 구문 분석](15.-grt-greater-than-getvariable-api.md)
 * [16. OVMF 이미지 내에 부팅 옵션 만들기](16.-ovmf.md)
 * [17. 부팅 옵션에 WaitForEvent 기능 추가](17.-waitforevent.md)
