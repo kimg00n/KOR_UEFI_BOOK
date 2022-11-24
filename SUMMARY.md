@@ -20,3 +20,4 @@
 * [16. OVMF 이미지 내에 부팅 옵션 만들기](16.-ovmf.md)
 * [17. 부팅 옵션에 WaitForEvent 기능 추가](17.-waitforevent.md)
 * [18. ReadKeyStroke 함수로 사용자 입력 처리](18.-readkeystroke.md)
+* [19. bcfg 명령을 사용한 부팅 옵션 수정](19.-bcfg.md)
