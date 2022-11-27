@@ -22,3 +22,4 @@
 * [18. ReadKeyStroke 함수로 사용자 입력 처리](18.-readkeystroke.md)
 * [19. bcfg 명령을 사용한 부팅 옵션 수정](19.-bcfg.md)
 * [20. PCD 소개](20.-pcd.md)
+* [21. PCD 변수에 대한 Overriding](21.-pcd-overriding.md)
