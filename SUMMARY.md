@@ -24,3 +24,4 @@
 * [20. PCD 소개](20.-pcd.md)
 * [21. PCD 변수에 대한 Overriding](21.-pcd-overriding.md)
 * [22. Feature Flag PCD와 BOOLEAN FixedAtBuild PCD의 비교](22.-feature-flag-pcd-boolean-fixedatbuild-pcd.md)
+* [23. PatchableInModule PCD 및 GenPatchPcdTable/PatchPcdValue 유틸리티를 통해 PCD를 변경하는 방법](23.-patchableinmodule-pcd-genpatchpcdtable-patchpcdvalue-pcd.md)
