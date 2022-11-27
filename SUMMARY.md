@@ -23,3 +23,4 @@
 * [19. bcfg 명령을 사용한 부팅 옵션 수정](19.-bcfg.md)
 * [20. PCD 소개](20.-pcd.md)
 * [21. PCD 변수에 대한 Overriding](21.-pcd-overriding.md)
+* [22. Feature Flag PCD와 BOOLEAN FixedAtBuild PCD의 비교](22.-feature-flag-pcd-boolean-fixedatbuild-pcd.md)
