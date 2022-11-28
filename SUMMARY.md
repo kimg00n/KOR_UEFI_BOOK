@@ -28,3 +28,4 @@
 * [24. Dynamic/DynamiEx PCDs](24.-dynamic-dynamiex-pcds.md)
 * [26. EFI\_CONFIGURATION\_TABLE에서 참조되는 테이블](26.-efi\_configuration\_table.md)
 * [27. dmem/EFI\_SMBIOS\_PROTOCOL/smbiosview를 통해서 SMBIOS 정보 가져오기](27.-dmem-efi\_smbios\_protocol-smbiosview-smbios.md)
+* [31. ShellLib/PrintLib을 사용해 pci.ids DB에서 PCI Vendor/Device 정보 가져오기](31.-shelllib-printlib-pci.ids-db-pci-vendor-device.md)
