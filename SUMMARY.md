@@ -27,3 +27,4 @@
 * [23. PatchableInModule PCD 및 GenPatchPcdTable/PatchPcdValue 유틸리티를 통해 PCD를 변경하는 방법](23.-patchableinmodule-pcd-genpatchpcdtable-patchpcdvalue-pcd.md)
 * [24. Dynamic/DynamiEx PCDs](24.-dynamic-dynamiex-pcds.md)
 * [26. EFI\_CONFIGURATION\_TABLE에서 참조되는 테이블](26.-efi\_configuration\_table.md)
+* [27. dmem/EFI\_SMBIOS\_PROTOCOL/smbiosview를 통해서 SMBIOS 정보 가져오기](27.-dmem-efi\_smbios\_protocol-smbiosview-smbios.md)
