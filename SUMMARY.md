@@ -26,6 +26,7 @@
 * [22. Feature Flag PCD와 BOOLEAN FixedAtBuild PCD의 비교](22.-feature-flag-pcd-boolean-fixedatbuild-pcd.md)
 * [23. PatchableInModule PCD 및 GenPatchPcdTable/PatchPcdValue 유틸리티를 통해 PCD를 변경하는 방법](23.-patchableinmodule-pcd-genpatchpcdtable-patchpcdvalue-pcd.md)
 * [24. Dynamic/DynamiEx PCDs](24.-dynamic-dynamiex-pcds.md)
+* [25. PCD 더 알아보기](25.-pcd.md)
 * [26. EFI\_CONFIGURATION\_TABLE에서 참조되는 테이블](26.-efi\_configuration\_table.md)
 * [27. dmem/EFI\_SMBIOS\_PROTOCOL/smbiosview를 통해서 SMBIOS 정보 가져오기](27.-dmem-efi\_smbios\_protocol-smbiosview-smbios.md)
 * [28. EFI\_SHELL\_PROTOCOL을 통하여 ACPI 테이블을 파일에 저장하기](28.-efi\_shell\_protocol-acpi.md)
