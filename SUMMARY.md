@@ -35,3 +35,4 @@
 * [31. ShellLib/PrintLib 함수를 사용해 pci.ids DB에서 PCI Vendor/Device 정보 가져오기](31.-shelllib-printlib-pci.ids-db-pci-vendor-device.md)
 * [32. EFI\_PCI\_IO\_PROTOCOL을 사용해 PCI 옵션 ROM 이미지 표시](32.-efi\_pci\_io\_protocol-pci-rom.md)
 * [33. EfiRom 유틸리티를 사용한 PCI Option ROM 이미지 파싱 및 생성](33.-efirom-pci-option-rom.md)
+* [34. 간단한 UEFI 드라이버 생성](34.-uefi.md)
