@@ -31,3 +31,4 @@
 * [27. dmem/EFI\_SMBIOS\_PROTOCOL/smbiosview를 통해서 SMBIOS 정보 가져오기](27.-dmem-efi\_smbios\_protocol-smbiosview-smbios.md)
 * [28. EFI\_SHELL\_PROTOCOL을 통하여 ACPI 테이블을 파일에 저장하기](28.-efi\_shell\_protocol-acpi.md)
 * [31. ShellLib/PrintLib 함수를 사용해 pci.ids DB에서 PCI Vendor/Device 정보 가져오기](31.-shelllib-printlib-pci.ids-db-pci-vendor-device.md)
+* [32. EFI\_PCI\_IO\_PROTOCOL을 사용해 PCI 옵션 ROM 이미지 표시](32.-efi\_pci\_io\_protocol-pci-rom.md)
