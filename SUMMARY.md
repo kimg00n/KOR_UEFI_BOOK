@@ -36,3 +36,4 @@
 * [32. EFI\_PCI\_IO\_PROTOCOL을 사용해 PCI 옵션 ROM 이미지 표시](32.-efi\_pci\_io\_protocol-pci-rom.md)
 * [33. EfiRom 유틸리티를 사용한 PCI Option ROM 이미지 파싱 및 생성](33.-efirom-pci-option-rom.md)
 * [34. 간단한 UEFI 드라이버 생성](34.-uefi.md)
+* [35. 앱에서 사용할 간단한 라이브러리 생성](35..md)
