@@ -38,3 +38,4 @@
 * [34. 간단한 UEFI 드라이버 생성](34.-uefi.md)
 * [35. 앱에서 사용할 간단한 라이브러리 생성](35..md)
 * [41. DEBUG 출력문 내부 구조와 DEBUG 문 제어를 위한 PCD 분석, 그리고 OVMF 부트 로그 가져오기](41.-debug-debug-pcd-ovmf.md)
+* [42. GDB를 이용한 Driver/Application 및 OVMF Debug](42.-gdb-driver-application-ovmf-debug.md)
