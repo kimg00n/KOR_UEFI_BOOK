@@ -42,3 +42,4 @@
 * [43. HII 데이터베이스 개념 및 출력](43.-hii.md)
 * [44. HII 데이터베이스 내부](44.-hii.md)
 * [46. EFI\_HII\_DATABASE\_PROTOCOL의 NewPackageList를 사용하여 문자열 패키지가 포함된 HII 패키지 목록 게시](46.-efi\_hii\_database\_protocol-newpackagelist-hii.md)
+* [47. EFI\_HII\_DATABASE\_PROTOCOL의 NewPackageList를 사용하여 문자열 패키지가 포함된 HII 패키지 목록 게시](47.-efi\_hii\_database\_protocol-newpackagelist-hii.md)
