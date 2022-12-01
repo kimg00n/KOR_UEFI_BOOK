@@ -37,6 +37,7 @@
 * [33. EfiRom 유틸리티를 사용한 PCI Option ROM 이미지 파싱 및 생성](33.-efirom-pci-option-rom.md)
 * [34. 간단한 UEFI 드라이버 생성](34.-uefi.md)
 * [35. 앱에서 사용할 간단한 라이브러리 생성](35..md)
+* [36. Library의 constructor와 destructor, NULL Library](36.-library-constructor-destructor-null-library.md)
 * [41. DEBUG 출력문 내부 구조와 DEBUG 문 제어를 위한 PCD 분석, 그리고 OVMF 부트 로그 가져오기](41.-debug-debug-pcd-ovmf.md)
 * [42. GDB를 이용한 Driver/Application 및 OVMF Debug](42.-gdb-driver-application-ovmf-debug.md)
 * [43. HII 데이터베이스 개념 및 출력](43.-hii.md)
