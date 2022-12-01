@@ -46,3 +46,4 @@
 * [46. EFI\_HII\_DATABASE\_PROTOCOL의 NewPackageList를 사용하여 문자열 패키지가 포함된 HII 패키지 목록 게시](46.-efi\_hii\_database\_protocol-newpackagelist-hii.md)
 * [47. EFI\_HII\_DATABASE\_PROTOCOL의 NewPackageList를 사용하여 문자열 패키지가 포함된 HII 패키지 목록 게시](47.-efi\_hii\_database\_protocol-newpackagelist-hii.md)
 * [48. UNI 파일 및 HiiLib를 사용하여 HII String 패키지 게시 및 작업하기](48.-uni-hiilib-hii-string.md)
+* [49.MODULE\_UNI\_FILE/PACKAGE\_UNI\_FILE/\[UserExtensions.TianoCore."ExtraFiles"\]의 도움으로 UNI 파일 선언하기](49.module\_uni\_file-package\_uni\_file-userextensions.tianocore.-extrafiles-uni.md)
