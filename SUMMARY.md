@@ -48,3 +48,4 @@
 * [48. UNI 파일 및 HiiLib를 사용하여 HII String 패키지 게시 및 작업하기](48.-uni-hiilib-hii-string.md)
 * [49.MODULE\_UNI\_FILE/PACKAGE\_UNI\_FILE/\[UserExtensions.TianoCore."ExtraFiles"\]의 도움으로 UNI 파일 선언하기](49.module\_uni\_file-package\_uni\_file-userextensions.tianocore.-extrafiles-uni.md)
 * [50.UEFI\_HII\_RESOURCE\_SECTION을 사용하여 문자열 패키지와 함께 HII 패키지 목록 게시하기](50.uefi\_hii\_resource\_section-hii.md)
+* [56. 코드에서 FILE\_GUID 및 BASE\_NAME을 가져 오는 방법](56.-file\_guid-base\_name.md)
