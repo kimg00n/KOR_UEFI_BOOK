@@ -59,3 +59,4 @@
 * [56. 코드에서 FILE\_GUID 및 BASE\_NAME을 가져 오는 방법](56.-file\_guid-base\_name.md)
 * [57. VFR을 사용해 간단한 form 생성 및 EFI\_FORM\_BROWSER2\_PROTOCOL.SendForm()를 통해 화면에 form 표시하기](57.-vfr-form-efi\_form\_browser2\_protocol.sendform-form.md)
 * [58. VFR 요소 : subtitle 및 text](58.-vfr-subtitle-text.md)
+* [61.dmpstore 명령을 사용하여 변수를 파일에 저장/로드하기](61.dmpstore.md)
