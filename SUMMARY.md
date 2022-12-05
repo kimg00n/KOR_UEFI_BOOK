@@ -54,3 +54,4 @@
 * [50.UEFI\_HII\_RESOURCE\_SECTION을 사용하여 문자열 패키지와 함께 HII 패키지 목록 게시하기](50.uefi\_hii\_resource\_section-hii.md)
 * [56. 코드에서 FILE\_GUID 및 BASE\_NAME을 가져 오는 방법](56.-file\_guid-base\_name.md)
 * [57. VFR을 사용해 간단한 form 생성 및 EFI\_FORM\_BROWSER2\_PROTOCOL.SendForm()를 통해 화면에 form 표시하기](57.-vfr-form-efi\_form\_browser2\_protocol.sendform-form.md)
+* [58. VFR 요소 : subtitle 및 text](58.-vfr-subtitle-text.md)
