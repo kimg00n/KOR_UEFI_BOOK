@@ -63,4 +63,8 @@
 * [61.dmpstore 명령을 사용하여 변수를 파일에 저장/로드하기](61.dmpstore.md)
 * [62. UEFI Device path의 구조](62.-uefi-device-path.md)
 * [63. checkbox를 가진 HII 폼 만들기](63.-checkbox-hii.md)
+* [66. VFR 추가 입력 요소 Part 2: string](66.-vfr-part-2-string.md)
+* [67. VFR 추가 입력 요소 Part 3: date & time](67.-vfr-part-3-date-and-time.md)
+* [68. VFR 추가 입력 요소 Part 3: oneof & orderedlist](68.-vfr-part-3-oneof-and-orderedlist.md)
+* [69. VFR의 조건부 키워드: suppressif/grayoutif/disableif/warningif/nosubmitif/inconsistentif](69.-vfr-suppressif-grayoutif-disableif-warningif-nosubmitif-inconsistentif.md)
 * [64. checkbox를 가진 HII폼 만들기](64.-checkbox-hii.md)
