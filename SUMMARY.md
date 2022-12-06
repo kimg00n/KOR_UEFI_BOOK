@@ -56,6 +56,7 @@
 * [52. Russian 글꼴 추가 - Part 1. EFI\_NARROW\_GLYPH/EFI\_WIDE\_GLYPH 형식 조사 및 \*.woff 글꼴 파일에서 GLYPH 배열 구성](52.-russian-part-1.-efi\_narrow\_glyph-efi\_wide\_glyph-.woff-glyph.md)
 * [53. Russian 글꼴 추가 - Part 2. EFI\_HII\_SIMPLE\_FONT\_PACKAGE 구성 및 HII 데이터베이스에 채우기](53.-russian-part-2.-efi\_hii\_simple\_font\_package-hii.md)
 * [54. EFI\_HII\_STRING\_PROTOCOL의 NewString 및 SetString 함수를 사용하여 다른 언어에 대한 문자열 패키지를 동적으로 추가](54.-efi\_hii\_string\_protocol-newstring-setstring.md)
+* [55. PlatformLangCodes EFI 변수 수정 및 다른 언어를 동적 추가하기](55.-platformlangcodes-efi.md)
 * [56. 코드에서 FILE\_GUID 및 BASE\_NAME을 가져 오는 방법](56.-file\_guid-base\_name.md)
 * [57. VFR을 사용해 간단한 form 생성 및 EFI\_FORM\_BROWSER2\_PROTOCOL.SendForm()를 통해 화면에 form 표시하기](57.-vfr-form-efi\_form\_browser2\_protocol.sendform-form.md)
 * [58. VFR 요소 : subtitle 및 text](58.-vfr-subtitle-text.md)
