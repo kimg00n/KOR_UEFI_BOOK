@@ -64,7 +64,7 @@
 * [62. UEFI Device path의 구조](62.-uefi-device-path.md)
 * [63. checkbox를 가진 HII 폼 만들기](63.-checkbox-hii.md)
 * [64. checkbox를 가진 HII폼 만들기](64.-checkbox-hii.md)
-* [65. 더 많은 VFR 입력 요소들](65.-vfr.md)
+* [65. 더 많은 VFR 입력 요소들](page-1.md)
 * [66. VFR 추가 입력 요소 Part 2: string](66.-vfr-part-2-string.md)
 * [67. VFR 추가 입력 요소 Part 3: date & time](67.-vfr-part-3-date-and-time.md)
 * [68. VFR 추가 입력 요소 Part 3: oneof & orderedlist](68.-vfr-part-3-oneof-and-orderedlist.md)
