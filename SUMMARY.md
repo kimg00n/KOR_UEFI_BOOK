@@ -61,6 +61,7 @@
 * [57. VFR을 사용해 간단한 form 생성 및 EFI\_FORM\_BROWSER2\_PROTOCOL.SendForm()를 통해 화면에 form 표시하기](57.-vfr-form-efi\_form\_browser2\_protocol.sendform-form.md)
 * [58. VFR 요소 : subtitle 및 text](58.-vfr-subtitle-text.md)
 * [59. 간단한 Form 애플리케이션을 UEFI 드라이버 Form으로 변환하기](59.-form-uefi-form.md)
+* [60. gRT->SetVariable() 함수를 사용한 UEFI 변수 생성, 변경 및 삭제](60.-grt-greater-than-setvariable-uefi.md)
 * [61.dmpstore 명령을 사용하여 변수를 파일에 저장/로드하기](61.dmpstore.md)
 * [62. UEFI Device path의 구조](62.-uefi-device-path.md)
 * [63. checkbox를 가진 HII 폼 만들기](63.-checkbox-hii.md)
