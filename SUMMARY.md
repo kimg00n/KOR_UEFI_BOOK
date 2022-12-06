@@ -63,3 +63,4 @@
 * [61.dmpstore 명령을 사용하여 변수를 파일에 저장/로드하기](61.dmpstore.md)
 * [62. UEFI Device path의 구조](62.-uefi-device-path.md)
 * [63. checkbox를 가진 HII 폼 만들기](63.-checkbox-hii.md)
+* [64. checkbox를 가진 HII폼 만들기](64.-checkbox-hii.md)
