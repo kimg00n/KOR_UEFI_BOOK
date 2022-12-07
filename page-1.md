@@ -132,3 +132,70 @@ endformset;
 
 드라이버를 빌드하고 모든 것이 제대로 작동하는지 확인해본다.
 
+## 숫자형 VFR 요소
+
+숫자 VFR 요소를 조사해보자. 이를 통해 사용자는 HII 폼에서 숫자 값을 입력할 수 있다. [https://edk2-docs.gitbook.io/edk-ii-vfr-specification/2\_vfr\_description\_in\_bnf/211\_vfr\_form\_definition#2.11.6.6.1-vfr-numeric-statement-definition](https://edk2-docs.gitbook.io/edk-ii-vfr-specification/2\_vfr\_description\_in\_bnf/211\_vfr\_form\_definition#2.11.6.6.1-vfr-numeric-statement-definition)
+
+새 요소에는 스토리지가 필요하므로 UEFI 변수 구조에 `UINT8 NumericValue` 필드를 추가한다.
+
+```c
+typedef struct {
+  UINT8 CheckboxValue;
+  UINT8 NumericValue;
+} UEFI_VARIABLE_STRUCTURE;
+```
+
+또한 HII폼에 필요한 몇 가지 문자열을 `UefiLessonsPkg/HIIFormDataElements/Strings.uni`에 추가한다.
+
+```
+#string NUMERIC_PROMPT         #language en-US  "Numeric prompt"
+#string NUMERIC_HELP           #language en-US  "Numeric help"
+```
+
+요소에 대한 최소한의 VFR 코드는 다음과 같다.
+
+```
+numeric
+  varid = FormData.NumericValue,
+  prompt = STRING_TOKEN(NUMERIC_PROMPT),
+  help = STRING_TOKEN(NUMERIC_HELP),
+  minimum = 5,
+  maximum = 20,
+endnumeric;
+```
+
+`minimum`과 `maximum`필드는 숫자 요소에 필수이다. 이 예제에서는 값을 `5..20` 범위로 제한한다.
+
+UEFI 변수의 크기를 변경했으므로 드라이버를 로드하기 전에 제거하는 것이 좋다.(unload 명령어 사용)
+
+```
+FS0:\> dmpstore -guid 531bc507-9191-4fa2-9446-b844e35dd12a -d
+FS0:\> load HIIFormDataElements.efi
+```
+
+우리의 폼을 로드하면 다음과 같다.
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+보다시피 기본적으로 값은 0이다.(`ZeroMem(&EfiVarstore, sizeof(EfiVarstore))`을 사용하기 때문) 이는 값이 제한 범위(5..20)를 벗어남을 의미한다. 요점은 HII 폼은 초기 값을 제어할 수 없다는 것이다. 최대값 및 최소값은 오직 사용자의입력에 대한 제한이다.
+
+범위를 벗어난 값(예: 4)을 입력하려고 하면 폼에서 허용하지 않는다.
+
+<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+폼 엔진은 허용되지 않는 입력을 입력하는 것까지만 허용한다. 예를 들어 첫 번째 기호로 `3`을 입력하면 폼 엔진은 다른 숫자 기호를 추가로 입력하는 것을 허용하지 않는다. 값이 사용 가능한 범위를 벗어나기 때문이다.&#x20;
+
+그러나 허용 범위에 있으면 값을 성공적으로 입력하고 저장(`F10`)할 수 있다.
+
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+`dmpstore` 명령을 사용하여 값이 성공적으로 설정되었는지 확인할 수 있다. 우리의 경우 값은 저장소의 두 번째 바이트에 있다.(`0x0f = 15`)
+
+```
+Shell> dmpstore -guid 531bc507-9191-4fa2-9446-b844e35dd12a
+Variable NV+BS '531BC507-9191-4FA2-9446-B844E35DD12A:FormData' DataSize = 0x02
+  00000000: 00 0F                                            *..*
+```
+
