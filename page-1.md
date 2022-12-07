@@ -175,21 +175,21 @@ FS0:\> load HIIFormDataElements.efi
 
 우리의 폼을 로드하면 다음과 같다.
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 보다시피 기본적으로 값은 0이다.(`ZeroMem(&EfiVarstore, sizeof(EfiVarstore))`을 사용하기 때문) 이는 값이 제한 범위(5..20)를 벗어남을 의미한다. 요점은 HII 폼은 초기 값을 제어할 수 없다는 것이다. 최대값 및 최소값은 오직 사용자의입력에 대한 제한이다.
 
 범위를 벗어난 값(예: 4)을 입력하려고 하면 폼에서 허용하지 않는다.
 
-<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (4).png" alt=""><figcaption></figcaption></figure>
 
 폼 엔진은 허용되지 않는 입력을 입력하는 것까지만 허용한다. 예를 들어 첫 번째 기호로 `3`을 입력하면 폼 엔진은 다른 숫자 기호를 추가로 입력하는 것을 허용하지 않는다. 값이 사용 가능한 범위를 벗어나기 때문이다.&#x20;
 
 그러나 허용 범위에 있으면 값을 성공적으로 입력하고 저장(`F10`)할 수 있다.
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (3) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 `dmpstore` 명령을 사용하여 값이 성공적으로 설정되었는지 확인할 수 있다. 우리의 경우 값은 저장소의 두 번째 바이트에 있다.(`0x0f = 15`)
 
@@ -197,5 +197,256 @@ FS0:\> load HIIFormDataElements.efi
 Shell> dmpstore -guid 531bc507-9191-4fa2-9446-b844e35dd12a
 Variable NV+BS '531BC507-9191-4FA2-9446-B844E35DD12A:FormData' DataSize = 0x02
   00000000: 00 0F                                            *..*
+```
+
+## 단계 필드
+
+숫자 VFR 요소는 단계 필드를 포함할 수 있다. 예를 들어&#x20;
+
+```
+numeric
+  varid = FormData.NumericValue,
+  prompt = STRING_TOKEN(NUMERIC_PROMPT),
+  help = STRING_TOKEN(NUMERIC_HELP),
+  minimum = 5,
+  maximum = 20,
+  step = 2,
+endnumeric;
+```
+
+이 필드가 있는 경우 폼의 왼쪽 하단에 값 조정 도움말 메시지가 표시된다.
+
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+이는 `+`/`-`를 입력하여 요소 값을 늘리거나 줄일 수 있음을 의미한다. 그리고 `+`/`-`를 입력할 때마다 단계 필드에 설정한 값만큼 값이 증가/감소한다. 폼 엔진은 심지어 범위 필드를 어느 정도 존중한다. 예를 들어 값이 `19`이고 `+`를 입력하면 값이 `20`으로 설정된다. 다음 `+`는 값을 `5`로 변경하고 다음 `+`는 `7`로 변경한다.
+
+## IFR 코드 분석
+
+평소처럼 바뀐 IFR 코드를 조사해보자.
+
+`Build/UefiLessonsPkg/RELEASE_GCC5/X64/UefiLessonsPkg/HIIFormDataElements/HIIFormDataElements/DEBUG/Form.lst`
+
+```
+    numeric
+>0000006C: 07 91 07 00 08 00 02 00 01 00 01 00 00 10 05 14 02
+      varid = FormData.NumericValue,
+      prompt = STRING_TOKEN(0x0007),
+      help = STRING_TOKEN(0x0008),
+      minimum = 5,
+      maximum = 20,
+      step = 2,
+    endnumeric;
+>0000007D: 29 02
+```
+
+이를 해석하려면 UEFI 스펙을 참조해야한다.&#x20;
+
+```
+EFI_IFR_NUMERIC
+
+Summary:
+Creates a number question.
+
+Prototype:
+#define EFI_IFR_NUMERIC_OP 0x07
+
+typedef struct _EFI_IFR_NUMERIC {
+ EFI_IFR_OP_HEADER   Header;
+ EFI_IFR_QUESTION_HEADER Question;
+ UINT8 Flags;
+
+ union {
+   struct {
+    UINT8 MinValue;
+    UINT8 MaxValue;
+    UINT8 Step;
+   } u8;
+   struct {
+    UINT16 MinValue;
+    UINT16 MaxValue;
+    UINT16 Step;
+   } u16;
+   struct {
+    UINT32 MinValue;
+    UINT32 MaxValue;
+    UINT32 Step;
+   } u32;
+   struct {
+    UINT64 MinValue;
+    UINT64 MaxValue;
+    UINT64 Step;
+   } u64;
+ } data;
+} EFI_IFR_NUMERIC;
+
+Members:
+Header 		The sequence that defines the type of opcode as well as the length of the opcode being defined. Header.OpCode = EFI_IFR_NUMERIC_OP.
+Question 	The standard question header.
+Flags 		Specifies flags related to the numeric question.
+MinValue 	The minimum value to be accepted by the browser for this opcode. The size of the data field may vary from 8 to 64 bits.
+MaxValue 	The maximum value to be accepted by the browser for this opcode. The size of the data field may vary from 8 to 64 bits.
+Step 		Defines the amount to increment or decrement the value each time a user requests a value change. If the step value is 0, then
+		the input mechanism for the numeric value is to be free-form and require the user to type in the actual value. The size of the
+		data field may vary from 8 to 64 bits.
+```
+
+checkbox 요소에 대해 이야기할 때 이미 `EFI_IFR_OP_HEADER` 및 `EFI_IFR_QUESTION_HEADER`를 조사했었다.
+
+이 데이터를 빼면 `10 05 14 02`만 남는다.
+
+이것은 우리의 새 필드가 다음과 같이 채워짐을 의미한다.
+
+```
+typedef struct _EFI_IFR_NUMERIC {
+ EFI_IFR_OP_HEADER   Header;
+ EFI_IFR_QUESTION_HEADER Question;
+ UINT8 Flags;                        = 0x10
+ struct {
+    UINT8 MinValue;                  = 0x05
+    UINT8 MaxValue;                  = 0x14
+    UINT8 Step;                      = 0x02
+ } u8;
+} EFI_IFR_NUMERIC;
+```
+
+`0x10` 값을 갖는 `Flags` 필드를 제외하고 모든 것이 예상대로 채워진다. `0x10`은 무슨 의미일까?
+
+특수 숫자 플래그는 다음과 같다.
+
+```
+#define EFI_IFR_NUMERIC_SIZE           0x03
+#define EFI_IFR_NUMERIC_SIZE_1         0x00
+#define EFI_IFR_NUMERIC_SIZE_2         0x01
+#define EFI_IFR_NUMERIC_SIZE_4         0x02
+#define EFI_IFR_NUMERIC_SIZE_8         0x03
+
+#define EFI_IFR_DISPLAY                0x30
+#define EFI_IFR_DISPLAY_INT_DEC        0x00
+#define EFI_IFR_DISPLAY_UINT_DEC       0x10
+#define EFI_IFR_DISPLAY_UINT_HEX       0x20
+```
+
+따라서 우리의 경우 `EFI_IFR_DISPLAY_UINT_DEC` 및 `EFI_IFR_NUMERIC_SIZE_1` 플래그가 있는 것이다. 즉, 부호 없는 10진수로 표시되며 크기는 1바이트라는 것을 표시해준다.
+
+## 숫자 플래그
+
+플래그 값을 변경하려면 VFR에서 이 키워드를 사용해야 한다.
+
+```
+NUMERIC_SIZE_1
+NUMERIC_SIZE_2
+NUMERIC_SIZE_4
+NUMERIC_SIZE_8
+DISPLAY_INT_DEC
+DISPLAY_UINT_DEC
+DISPLAY_UINT_HEX
+```
+
+예를 들어 `flags = DISPLAY_UINT_HEX`를 사용하면 값이 16진수로 렌더링된다.
+
+```
+numeric
+  varid = FormData.NumericValue,
+  prompt = STRING_TOKEN(NUMERIC_PROMPT),
+  help = STRING_TOKEN(NUMERIC_HELP),
+  flags = DISPLAY_UINT_HEX,
+  minimum = 5,
+  maximum = 200,
+  step = 2,
+endnumeric;
+```
+
+<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+음의 정수를 설정할 가능성을 추가하려면 `DISPLAY_INT_DEC` 플래그를 추가하면 된다.
+
+```
+numeric
+  varid = FormData.NumericValue,
+  prompt = STRING_TOKEN(NUMERIC_PROMPT),
+  help = STRING_TOKEN(NUMERIC_HELP),
+  flags = DISPLAY_INT_DEC,
+  minimum = -5,
+  maximum = 20,
+  step = 2,
+endnumeric;
+```
+
+<figure><img src=".gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
+크기 플래그는 기본적으로 저장소의 변수의 크기에 따라 자동으로 설정된다. 예를 들어 숫자 필드의 유형을 UINT32로 변경하는 경우,
+
+```c
+typedef struct {
+  UINT8 CheckboxValue;
+  UINT32 NumericValue;
+} UEFI_VARIABLE_STRUCTURE;
+```
+
+VFR 코드:
+
+```
+numeric
+  varid = FormData.NumericValue,
+  prompt = STRING_TOKEN(NUMERIC_PROMPT),
+  help = STRING_TOKEN(NUMERIC_HELP),
+  minimum = 0x11223344,
+  maximum = 0xAABBCCDD,
+  step = 2,
+endnumeric;
+```
+
+빌드 하면 다음 IFR 결과를 생성한다.
+
+```
+    numeric
+>0000006C: 07 9A 07 00 08 00 02 00 01 00 01 00 00 12 44 33 22 11 DD CC BB AA 02 00 00 00
+      varid = FormData.NumericValue,
+      prompt = STRING_TOKEN(0x0007),
+      help = STRING_TOKEN(0x0008),
+      minimum = 0x11223344,
+      maximum = 0xaabbccdd,
+      step = 2,
+    endnumeric;
+>00000086: 29 02
+```
+
+데이터를 구문 분석해보면,
+
+```
+flags   = 0x12       = EFI_IFR_DISPLAY_UINT_DEC | EFI_IFR_NUMERIC_SIZE_4
+minimum = 0x11223344
+maximum = 0xaabbccdd
+step    = 0x00000002
+```
+
+크기 플래그가 `EFI_IFR_NUMERIC_SIZE_1`에서 `EFI_IFR_NUMERIC_SIZE_4`로 변경되었다.
+
+빌드 시스템은 빌드 프로세스에서 스토리지 크기를 확인한다는 것을 알 수 있다.&#x20;
+
+그래서 크기만 `UINT8`로 되돌리고 `minimum`/`maximum`/`step`에 대해 `UINT32` 값을 그대로 두면 빌드가 실패한다.
+
+```
+ERROR 12288: Overflow: Value 0x11223344 is too large to store in a UINT8
+```
+
+또한 저장소 크기와 충돌하는 크기 플래그를 입력할 수 없다.
+
+```
+ERROR 12288: Numeric Flag is not same to Numeric VarData type
+```
+
+efivarstore의 경우 크기 플래그는 중복성을 가진다. 이것은 다른 유형의 스토리지를 사용하는 경우에만 중요하다. 하지만 VFR에 있는 저장소의 크기를 명시적으로 표시하려는 경우에 넣을 수 있다.
+
+또한 UEFI 변수 크기를 변경할 때마다 UEFI 변수를 삭제하는 것을 잊지 말자. 꼭 업데이트된 드라이버를 로드하기 전에 수행해야 한다.&#x20;
+
+```
+FS0:\> dmpstore -guid 531bc507-9191-4fa2-9446-b844e35dd12a -d
+```
+
+`|` 연산자의 도움으로 여러 플래그를 결합할 수 있음을 기억하자.
+
+```
+flags = NUMERIC_SIZE_8 | DISPLAY_UINT_HEX,
 ```
 
