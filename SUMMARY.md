@@ -72,3 +72,4 @@
 * [68. VFR 추가 입력 요소 Part 3: oneof & orderedlist](68.-vfr-part-3-oneof-and-orderedlist.md)
 * [69. VFR의 조건부 키워드: suppressif/grayoutif/disableif/warningif/nosubmitif/inconsistentif](69.-vfr-suppressif-grayoutif-disableif-warningif-nosubmitif-inconsistentif.md)
 * [70. VFR의 상수 및 연산자. ideqval/ideqvalist/ideqid/questionref/pushthis가 내장된 기본 조건문](70.-vfr-.-ideqval-ideqvalist-ideqid-questionref-pushthis.md)
+* [71. 기본 VFR 내장 문자열용 함수](71.-vfr.md)
