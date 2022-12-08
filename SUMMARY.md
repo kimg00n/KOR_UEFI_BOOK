@@ -74,6 +74,7 @@
 * [70. VFR의 상수 및 연산자. ideqval/ideqvalist/ideqid/questionref/pushthis가 내장된 기본 조건문](70.-vfr-.-ideqval-ideqvalist-ideqid-questionref-pushthis.md)
 * [71. 기본 VFR 내장 문자열용 함수](71.-vfr.md)
 * [72. label 키워드를 이용하여 HII 양식에 동적 요소 추가하기](72.-label-hii.md)
+* [73. VFR question 기본값 설정: default/defaultstore/resetbutton](73.-vfr-question-default-defaultstore-resetbutton.md)
 
 ## Uncategorized Lesson
 

@@ -175,19 +175,19 @@ FS0:\> load HIIFormDataElements.efi
 
 우리의 폼을 로드하면 다음과 같다.
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 보다시피 기본적으로 값은 0이다.(`ZeroMem(&EfiVarstore, sizeof(EfiVarstore))`을 사용하기 때문) 이는 값이 제한 범위(5..20)를 벗어남을 의미한다. 요점은 HII 폼은 초기 값을 제어할 수 없다는 것이다. 최대값 및 최소값은 오직 사용자의입력에 대한 제한이다.
 
 범위를 벗어난 값(예: 4)을 입력하려고 하면 폼에서 허용하지 않는다.
 
-<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (3).png" alt=""><figcaption></figcaption></figure>
 
 폼 엔진은 허용되지 않는 입력을 입력하는 것까지만 허용한다. 예를 들어 첫 번째 기호로 `3`을 입력하면 폼 엔진은 다른 숫자 기호를 추가로 입력하는 것을 허용하지 않는다. 값이 사용 가능한 범위를 벗어나기 때문이다.&#x20;
 
 그러나 허용 범위에 있으면 값을 성공적으로 입력하고 저장(`F10`)할 수 있다.
 
-<figure><img src=".gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (3) (3).png" alt=""><figcaption></figcaption></figure>
 
