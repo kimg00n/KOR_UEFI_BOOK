@@ -74,3 +74,14 @@
 * [70. VFR의 상수 및 연산자. ideqval/ideqvalist/ideqid/questionref/pushthis가 내장된 기본 조건문](70.-vfr-.-ideqval-ideqvalist-ideqid-questionref-pushthis.md)
 * [71. 기본 VFR 내장 문자열용 함수](71.-vfr.md)
 * [72. label 키워드를 이용하여 HII 양식에 동적 요소 추가하기](72.-label-hii.md)
+
+## Uncategorized Lesson
+
+* [UEFI Configuration Language(UEFI 구성 문자열)](uncategorized-lesson/uefi-configuration-language-uefi/README.md)
+  * [EFI\_HII\_CONFIG\_ROUTING\_PROTOCOL.ExportConfig() 함수로 현재 HII 데이터베이스 설정 덤프하기](uncategorized-lesson/uefi-configuration-language-uefi/efi\_hii\_config\_routing\_protocol.exportconfig-hii.md)
+  * [구성 문자열 데이터를 예쁘게 만드는 함수 만들기](uncategorized-lesson/uefi-configuration-language-uefi/undefined.md)
+  * [EFI\_HII\_CONFIG\_ROUTING\_PROTOCOL.ExtractConfig() 함수로 개별 폼 요소 구성 추출하기](uncategorized-lesson/uefi-configuration-language-uefi/efi\_hii\_config\_routing\_protocol.extractconfig.md)
+  * [사용자 정의 양식에서 ExtractConfig 요청 구문 살펴보기](uncategorized-lesson/uefi-configuration-language-uefi/extractconfig.md)
+  * [EFI\_HII\_CONFIG\_ROUTING\_PROTOCOL.RouteConfig() 함수로 폼 데이터 변경하기](uncategorized-lesson/uefi-configuration-language-uefi/efi\_hii\_config\_routing\_protocol.routeconfig.md)
+  * [EFI\_CONFIG\_KEYWORD\_HANDLER\_PROTOCOL.GetData() 함수로 키워드 값 가져오기](uncategorized-lesson/uefi-configuration-language-uefi/efi\_config\_keyword\_handler\_protocol.getdata.md)
+  * [EFI\_CONFIG\_KEYWORD\_HANDLER\_PROTOCOL.SetData() 함수를 사용하여 키워드가 참조하는 데이터를 변경하기](uncategorized-lesson/uefi-configuration-language-uefi/efi\_config\_keyword\_handler\_protocol.setdata.md)
