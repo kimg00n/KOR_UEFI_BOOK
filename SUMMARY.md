@@ -1,6 +1,13 @@
 # Table of contents
 
 * [개요](README.md)
+
+## 📖 UEFI 개념
+
+* [1. BIOS의 과거](uefi/1.-bios.md)
+
+***
+
 * [0. EDK II 빌드 환경 구성](readme-1.md)
 * [1. 간단한 EFI application 만들기](1.-efi-application.md)
 * [2. 간단한 Pkg 만들기](2.-pkg.md)
