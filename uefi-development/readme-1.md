@@ -20,7 +20,7 @@ bash$ sudo apt install build-essential uuid-dev iasl git nasm python-is-python3
 ```
 
 * build-essential - 빌드 패키지 정보 목록
-* uuid-dev - UUID(Universally Unique ID) 라이브러리&#x20;
+* uuid-dev - UUID(Universally Unique ID) 라이브러리
 * iasl - Intel ASL 컴파일러/디컴파일러
 * git
 * nasm - 범용 x86 어셈블러
@@ -116,7 +116,8 @@ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm python3-distut
 
 <pre class="language-bash"><code class="lang-bash">bash$ mkdir ~/src
 bash$ cd ~/src
-<strong>git clone &#x3C;https://github.com/tianocore/edk2.git</strong></code></pre>
+<strong>git clone &#x3C;https://github.com/tianocore/edk2.git
+</strong></code></pre>
 
 #### 서브모듈 받기
 
@@ -156,13 +157,10 @@ bash$ build
 bash$ ls Build/MdeModule/DEBUG_*/*/HelloWorld.efi
 ```
 
-
-
 ## Window
 
-* 추후 추가
+* 추후 추가 예정
 
 ## Mac OS
 
-* 추후 추가
-
+* 추후 추가 예정
