@@ -85,3 +85,7 @@
 * [71. 기본 VFR 내장 문자열용 함수](uefi-development/71.-vfr.md)
 * [72. label 키워드를 이용하여 HII 양식에 동적 요소 추가하기](uefi-development/72.-label-hii.md)
 * [73. VFR question 기본값 설정: default/defaultstore/resetbutton](uefi-development/73.-vfr-question-default-defaultstore-resetbutton.md)
+
+## 🔐 UEFI 보안 <a href="#uefi-security" id="uefi-security"></a>
+
+* [1. 개요](uefi-security/1..md)
