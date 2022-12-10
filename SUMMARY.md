@@ -5,6 +5,9 @@
 ## 📖 UEFI 개념
 
 * [1. BIOS의 과거](uefi/1.-bios.md)
+* [2. UEFI 개념](uefi/2.-uefi.md)
+* [3. BIOS vs UEFI](uefi/3.-bios-vs-uefi.md)
+* [4. UEFI 부팅 단계](uefi/4.-uefi.md)
 
 ## 🖥 UEFI 개발 <a href="#uefi-development" id="uefi-development"></a>
 
