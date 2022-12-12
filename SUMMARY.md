@@ -70,11 +70,11 @@
 * [54. EFI\_HII\_STRING\_PROTOCOL의 NewString 및 SetString 함수를 사용하여 다른 언어에 대한 문자열 패키지를 동적으로 추가](uefi-development/54.-efi\_hii\_string\_protocol-newstring-setstring.md)
 * [55. PlatformLangCodes EFI 변수 수정 및 다른 언어를 동적 추가하기](uefi-development/55.-platformlangcodes-efi.md)
 * [56. 코드에서 FILE\_GUID 및 BASE\_NAME을 가져 오는 방법](uefi-development/56.-file\_guid-base\_name.md)
-* [57. VFR을 사용해 간단한 form 생성 및 EFI\_FORM\_BROWSER2\_PROTOCOL.SendForm()를 통해 화면에 form 표시하기](uefi-development/57.-vfr-form-efi\_form\_browser2\_protocol.sendform-form.md)
-* [58. VFR 요소 : subtitle 및 text](uefi-development/58.-vfr-subtitle-text.md)
-* [59. 간단한 Form 애플리케이션을 UEFI 드라이버 Form으로 변환하기](uefi-development/59.-form-uefi-form.md)
-* [60. gRT->SetVariable() 함수를 사용한 UEFI 변수 생성, 변경 및 삭제](uefi-development/60.-grt-greater-than-setvariable-uefi.md)
-* [61.dmpstore 명령을 사용하여 변수를 파일에 저장/로드하기](uefi-development/61.dmpstore.md)
+* [Page 1](uefi-development/page-1-1/README.md)
+  * [57. VFR을 사용해 간단한 form 생성 및 EFI\_FORM\_BROWSER2\_PROTOCOL.SendForm()를 통해 화면에 form 표시하기](uefi-development/page-1-1/57.-vfr-form-efi\_form\_browser2\_protocol.sendform-form.md)
+  * [58. VFR 요소 : subtitle 및 text](uefi-development/page-1-1/58.-vfr-subtitle-text.md)
+  * [59. 간단한 Form 애플리케이션을 UEFI 드라이버 Form으로 변환하기](uefi-development/page-1-1/59.-form-uefi-form.md)
+  * [60. gRT->SetVariable() 함수를 사용한 UEFI 변수 생성, 변경 및 삭제](uefi-development/page-1-1/60.-grt-greater-than-setvariable-uefi.md)
 * [62. UEFI Device path의 구조](uefi-development/62.-uefi-device-path.md)
 * [63. checkbox를 가진 HII 폼 만들기](uefi-development/63.-checkbox-hii.md)
 * [64. checkbox를 가진 HII폼 만들기](uefi-development/64.-checkbox-hii.md)
@@ -87,6 +87,7 @@
 * [71. 기본 VFR 내장 문자열용 함수](uefi-development/71.-vfr.md)
 * [72. label 키워드를 이용하여 HII 양식에 동적 요소 추가하기](uefi-development/72.-label-hii.md)
 * [73. VFR question 기본값 설정: default/defaultstore/resetbutton](uefi-development/73.-vfr-question-default-defaultstore-resetbutton.md)
+* [61.dmpstore 명령을 사용하여 변수를 파일에 저장/로드하기](uefi-development/61.dmpstore.md)
 
 ## 🔐 UEFI 보안 <a href="#uefi-security" id="uefi-security"></a>
 
