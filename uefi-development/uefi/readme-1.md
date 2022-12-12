@@ -19,12 +19,12 @@ description: EDK II 를 이용하여 EFI 만들기
 bash$ sudo apt install build-essential uuid-dev iasl git nasm python-is-python3 
 ```
 
-* build-essential - 빌드 패키지 정보 목록
-* uuid-dev - UUID(Universally Unique ID) 라이브러리
-* iasl - Intel ASL 컴파일러/디컴파일러
-* git
-* nasm - 범용 x86 어셈블러
-* python-is-python3 - 우분투 20.04는 python 명령을 'python3'로 쓰지만 edk2는 'python'을 쓴다.
+* `build-essential` - 빌드 패키지 정보 목록
+* `uuid-dev` - UUID(Universally Unique ID) 라이브러리
+* `iasl` - Intel ASL 컴파일러/디컴파일러
+* `git`
+* `nasm` - 범용 x86 어셈블러
+* `python-is-python3` - 우분투 20.04는 python 명령을 `python3` 로 쓰지만 edk2는 `python` 을 쓴다.
 
 #### Git을 이용한 edk2 소스 받기
 
@@ -34,7 +34,7 @@ bash$ cd ~/src
 bash$ git clone https://github.com/tianocore/edk2
 ```
 
-#### 서브모듈 받기
+#### 서브 모듈 받기
 
 ```shell
 bash$ git submodule update --init
@@ -88,11 +88,11 @@ TOOL_CHAIN_TAG        = GCC5
 TARGET_ARCH           = IA32
 ```
 
-위의 TARGET\_ARCH를 변경하면 최종 UEFI 바이너리에 아키텍처가 반영된다.
+위의 `TARGET_ARCH`를 변경하면 최종 UEFI 바이너리에 아키텍처가 반영된다.
 
 #### Hello World빌드하기(MdeModulePkg 전체) <a href="#user-content-build_hello_world_and_the_rest_of_mdemodulepkg" id="user-content-build_hello_world_and_the_rest_of_mdemodulepkg"></a>
 
-위의 과정을 모두 따라했다면 빌드 명령을 통해 MdeModulePkg를 컴파일 할 수 있다.
+위의 과정을 모두 따라했다면 빌드 명령을 통해 `MdeModulePkg`를 컴파일 할 수 있다.
 
 ```
 bash$ build
