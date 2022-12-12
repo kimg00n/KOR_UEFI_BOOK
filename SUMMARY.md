@@ -92,11 +92,11 @@
   * [66. VFR 추가 입력 요소 Part 2: string](uefi-development/66.-vfr-part-2-string.md)
   * [67. VFR 추가 입력 요소 Part 3: date & time](uefi-development/67.-vfr-part-3-date-and-time.md)
   * [68. VFR 추가 입력 요소 Part 3: oneof & orderedlist](uefi-development/68.-vfr-part-3-oneof-and-orderedlist.md)
-  * [69. VFR의 조건부 키워드: suppressif/grayoutif/disableif/warningif/nosubmitif/inconsistentif](uefi-development/69.-vfr-suppressif-grayoutif-disableif-warningif-nosubmitif-inconsistentif.md)
-  * [70. VFR의 상수 및 연산자. ideqval/ideqvalist/ideqid/questionref/pushthis가 내장된 기본 조건문](uefi-development/70.-vfr-.-ideqval-ideqvalist-ideqid-questionref-pushthis.md)
+  * [69. VFR의 조건부 키워드](uefi-development/vfr/69.-vfr.md)
+  * [70. VFR의 상수 및 연산자가 내장된 기본 조건문](uefi-development/vfr/70.-vfr.md)
   * [71. 기본 VFR 내장 문자열용 함수](uefi-development/71.-vfr.md)
   * [72. label 키워드를 이용하여 HII 양식에 동적 요소 추가하기](uefi-development/72.-label-hii.md)
-  * [73. VFR question 기본값 설정: default/defaultstore/resetbutton](uefi-development/73.-vfr-question-default-defaultstore-resetbutton.md)
+  * [73. VFR question 기본값 설정](uefi-development/vfr/73.-vfr-question.md)
 
 ## 🔐 UEFI 보안 <a href="#uefi-security" id="uefi-security"></a>
 
