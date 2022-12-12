@@ -34,7 +34,7 @@
   * [15. gRT->GetVariable API를 사용하여 부팅 변수 가져오기 및 구문 분석](uefi-development/undefined-3/15.-grt-greater-than-getvariable-api.md)
   * [16. OVMF 이미지 내에 부팅 옵션 추가](uefi-development/undefined-2/16.-ovmf.md)
   * [17. 부팅 옵션에 WaitForEvent 함수 추가](uefi-development/undefined-2/17.-waitforevent.md)
-  * [18. ReadKeyStroke 함수로 사용자 입력 처리하기](uefi-development/undefined-2/18.-readkeystroke.md)
+  * [18. ReadKeyStroke 함수로 사용자 입력 처리](uefi-development/undefined-2/18.-readkeystroke.md)
   * [19. bcfg 명령어를 사용한 부팅 옵션 수정](uefi-development/undefined-2/19.-bcfg.md)
 * [PCD](uefi-development/pcd/README.md)
   * [20. PCD 소개](uefi-development/20.-pcd.md)
