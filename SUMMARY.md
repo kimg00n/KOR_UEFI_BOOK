@@ -57,7 +57,7 @@
   * [34. 간단한 UEFI 드라이버 생성](uefi-development/34.-uefi.md)
   * [35. 애플리케이션에서 사용할 간단한 라이브러리 생성](uefi-development/35..md)
   * [36. Library의 constructor와 destructor, NULL Library](uefi-development/36.-library-constructor-destructor-null-library.md)
-  * [37. Shell에 acciview 명령을 추가하는 방법 조사](uefi-development/37.-shell-acciview.md)
+  * [37. Shell에 acpiview 명령을 추가하는 방법 조사](uefi-development/37.-shell-acciview.md)
   * [38. 사용자 지정 프로토콜을 만들고 사용하기 - InstallMultipleProtocolInterfaes와 UninstallMultipleProtocolInterfaces 사용](uefi-development/undefined-4/38.-installmultipleprotocolinterfaes-uninstallmultipleprotocolinterfaces.md)
   * [39. RegisterKeyNotify / UnrigisterKeyNotify 함수를 사용해 단축키 기능을 추가하는 드라이버 만들기](uefi-development/39.-registerkeynotify-unrigisterkeynotify.md)
   * [40. Key #### NVRAM 변수](uefi-development/40.-key-nvram.md)
