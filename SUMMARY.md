@@ -18,12 +18,12 @@
   * [3. Hello World 출력하기](uefi-development/uefi/3.-hello-world.md)
   * [4. 라이브러리와 Hello World](uefi-development/uefi/4.-hello-world.md)
   * [5. Conf를 통한 Build 단순화](uefi-development/uefi/5.-conf-build.md)
-* [핸들 및 프로토콜](uefi-development/undefined/README.md)
-  * [6. Handle/Protocol 데이터 베이스 구조 - Part 1](uefi-development/undefined/6.-handle-protocol-part-1.md)
-  * [7. Handle/Protocol 데이터 베이스 구조 - Part 2](uefi-development/undefined/7.-handle-protocol-part-2.md)
-  * [8. HandleProtocol API 함수 & ImageHandle 프로토콜을 통한 정보](uefi-development/undefined/8.-handleprotocol-api-and-imagehandle.md)
-  * [9. ProtocolsPerHandle API를 통한 ImageHandle 프로토콜 가져오기](uefi-development/undefined/9.-protocolsperhandle-api-imagehandle.md)
-  * [10. EFI\_STATUS 타입 과 EFI\_ERROR 매크로](uefi-development/undefined/10.-efi\_status-efi\_error.md)
+* [핸들 및 프로토콜](uefi-development/page-1/README.md)
+  * [6. Handle/Protocol 데이터 베이스 구조 - Part 1](uefi-development/page-1/6.-handle-protocol-part-1.md)
+  * [7. Handle/Protocol 데이터 베이스 구조 - Part 2](uefi-development/page-1/7.-handle-protocol-part-2.md)
+  * [8. HandleProtocol API 함수 & ImageHandle 프로토콜을 통한 정보](uefi-development/page-1/8.-handleprotocol-api-and-imagehandle.md)
+  * [9. ProtocolsPerHandle API를 통한 ImageHandle 프로토콜 가져오기](uefi-development/page-1/9.-protocolsperhandle-api-imagehandle.md)
+  * [10. EFI\_STATUS 타입 과 EFI\_ERROR 매크로](uefi-development/page-1/10.-efi\_status-efi\_error.md)
 * [11. EFI 메모리 맵 정보 얻기](uefi-development/11.-efi.md)
 * [12. EFI 메모리 맵을 리눅스 커널 스타일로 바꾸기](uefi-development/12.-efi.md)
 * [13.ShellAppMain 진입점](uefi-development/13.shellappmain.md)
@@ -94,3 +94,7 @@
 ## 🔐 UEFI 보안 <a href="#uefi-security" id="uefi-security"></a>
 
 * [1. 개요](uefi-security/1..md)
+
+***
+
+* [디버그](undefined.md)
