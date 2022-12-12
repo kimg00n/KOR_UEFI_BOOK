@@ -48,15 +48,17 @@
 * [31. ShellLib/PrintLib 함수를 사용해 pci.ids DB에서 PCI Vendor/Device 정보 가져오기](uefi-development/31.-shelllib-printlib-pci.ids-db-pci-vendor-device.md)
 * [32. EFI\_PCI\_IO\_PROTOCOL을 사용해 PCI 옵션 ROM 이미지 표시](uefi-development/32.-efi\_pci\_io\_protocol-pci-rom.md)
 * [33. EfiRom 유틸리티를 사용한 PCI Option ROM 이미지 파싱 및 생성](uefi-development/33.-efirom-pci-option-rom.md)
-* [34. 간단한 UEFI 드라이버 생성](uefi-development/34.-uefi.md)
-* [35. 앱에서 사용할 간단한 라이브러리 생성](uefi-development/35..md)
-* [36. Library의 constructor와 destructor, NULL Library](uefi-development/36.-library-constructor-destructor-null-library.md)
-* [37. Shell에 acciview 명령을 추가하는 방법 조사](uefi-development/37.-shell-acciview.md)
-* [38. 사용자 지정 프로토콜을 만들고 사용하기 - InstallMultipleProtocolInterfaes와 UninstallMultipleProtocolInterfaces 사용](uefi-development/38.-installmultipleprotocolinterfaes-uninstallmultipleprotocolinterfaces.md)
-* [39. RegisterKeyNotify / UnrigisterKeyNotify 함수를 사용해 단축키 기능을 추가하는 드라이버 만들기](uefi-development/39.-registerkeynotify-unrigisterkeynotify.md)
-* [40. Key #### NVRAM 변수](uefi-development/40.-key-nvram.md)
-* [41. DEBUG 출력문 내부 구조와 DEBUG 문 제어를 위한 PCD 분석, 그리고 OVMF 부트 로그 가져오기](uefi-development/41.-debug-debug-pcd-ovmf.md)
-* [42. GDB를 이용한 Driver/Application 및 OVMF Debug](uefi-development/42.-gdb-driver-application-ovmf-debug.md)
+* [드라이버 및 라이브러리](uefi-development/undefined-1/README.md)
+  * [34. 간단한 UEFI 드라이버 생성](uefi-development/undefined-1/34.-uefi.md)
+  * [35. 앱에서 사용할 간단한 라이브러리 생성](uefi-development/undefined-1/35..md)
+  * [36. Library의 constructor와 destructor, NULL Library](uefi-development/undefined-1/36.-library-constructor-destructor-null-library.md)
+  * [37. Shell에 acciview 명령을 추가하는 방법 조사](uefi-development/undefined-1/37.-shell-acciview.md)
+  * [38. 사용자 지정 프로토콜을 만들고 사용하기 - InstallMultipleProtocolInterfaes와 UninstallMultipleProtocolInterfaces 사용](uefi-development/undefined-1/38.-installmultipleprotocolinterfaes-uninstallmultipleprotocolinterfaces.md)
+  * [39. RegisterKeyNotify / UnrigisterKeyNotify 함수를 사용해 단축키 기능을 추가하는 드라이버 만들기](uefi-development/undefined-1/39.-registerkeynotify-unrigisterkeynotify.md)
+  * [40. Key #### NVRAM 변수](uefi-development/undefined-1/40.-key-nvram.md)
+* [디버그](uefi-development/undefined-2/README.md)
+  * [41. DEBUG 출력문 내부 구조와 DEBUG 문 제어를 위한 PCD 분석, 그리고 OVMF 부트 로그 가져오기](uefi-development/undefined-2/41.-debug-debug-pcd-ovmf.md)
+  * [42. GDB를 이용한 Driver/Application 및 OVMF Debug](uefi-development/undefined-2/42.-gdb-driver-application-ovmf-debug.md)
 * [HII](uefi-development/hii/README.md)
   * [43. HII 데이터베이스 개념 및 출력](uefi-development/43.-hii.md)
   * [44. HII 데이터베이스 내부](uefi-development/44.-hii.md)
@@ -94,7 +96,3 @@
 ## 🔐 UEFI 보안 <a href="#uefi-security" id="uefi-security"></a>
 
 * [1. 개요](uefi-security/1..md)
-
-***
-
-* [디버그](undefined.md)
