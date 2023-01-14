@@ -1,6 +1,6 @@
 # Table of contents
 
-* [프로젝트 개요](README.md)
+* [🧑🏫 프로젝트 개요](README.md)
 
 ## 📖 UEFI 개념 <a href="#introduction-uefi" id="introduction-uefi"></a>
 
